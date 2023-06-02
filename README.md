@@ -43,12 +43,3 @@
 
 ## Live demo
 Visit https://webapp23-group4.web.app/
-
-
-
-
-Activities
-Calories
-Dashboard
-Goals
-Measurements
