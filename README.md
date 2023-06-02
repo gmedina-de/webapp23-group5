@@ -18,19 +18,19 @@
 
 | #   | Title                             | Description                                                                                      |
 | --- | --------------------------------- | ------------------------------------------------------------------------------------------------ |
-| 1   | Create / Update / Delete activity | Including start and end date and time, category and an optional comment.                         |
-| 2   | Show activities                   | As table and time vs burned calories graph.                                                      |
-| 3   | Create / Update / Delete calories | Including date, time and consumed calories.                                                      |
-| 4   | Show calories                     | As table and time vs consumed calories graph.                                                    |
-| 5   | Show dashboard                    | Including key data for today like consumed vs. burned calories, current BMI and Waist-Hip-ratio. |
-| 6   | Create / Update / Delete goal     | For a certain measurement and a due date.                                                        |
-| 7   | Show goals                        | As a list showing for each goal how much is the current difference.                              |
-| 8   | Create scale measurement          | Including date, time, weight, body fat and an optional comment.                                  |
-| 9   | Create tape measurement           | Including date, time, height, hip, waist and an optional comment.                                |
-| 10  | Create vitals measurement         | Including date, time, temperature, heart rate, blood pressure and an optional comment.           |
-| 11  | Show measurements                 | As table and time graph for each measurement category (scale / tape / vitals).                   |
-| 12  | Update measurement                | Regardless of measurement type.                                                                  |
-| 13  | Delete measurement                | Regardless of measurement type.                                                                  |
+| 1   | Show dashboard                    | Including key data for today like consumed vs. burned calories, current BMI and Waist-Hip-ratio. |
+| 2   | Create / Update / Delete goal     | For a certain measurement and a due date.                                                        |
+| 3   | Show goals                        | As a list showing for each goal how much is the current difference.                              |
+| 4   | Create scale measurement          | Including date, time, weight, body fat and an optional comment.                                  |
+| 5   | Create tape measurement           | Including date, time, height, hip, waist and an optional comment.                                |
+| 6   | Create vitals measurement         | Including date, time, temperature, heart rate, blood pressure and an optional comment.           |
+| 7   | Show measurements                 | As table and time graph for each measurement category (scale / tape / vitals).                   |
+| 8   | Update measurement                | Regardless of measurement type.                                                                  |
+| 9   | Delete measurement                | Regardless of measurement type.                                                                  |
+| 10  | Create / Update / Delete calories | Including date, time and consumed calories.                                                      |
+| 11  | Show calories                     | As table and time vs consumed calories graph.                                                    |
+| 12  | Create / Update / Delete activity | Including start and end date and time, category and an optional comment.                         |
+| 13  | Show activities                   | As table and time vs burned calories graph.                                                      |
 | 14  | Show profile                      | Including name, birth date, and gender.                                                          |
 | 15  | Update profile                    | Including name, birth date, and gender.                                                          |
 
