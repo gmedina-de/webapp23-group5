@@ -1,0 +1,12 @@
+@startuml model
+skinparam objectFontSize 20
+skinparam backgroundcolor transparent
+
+object TBD {
+  - To
+  # Be
+  + Done
+  ~ In Assignment 7B
+}
+
+@enduml
