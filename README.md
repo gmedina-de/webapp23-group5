@@ -1,5 +1,7 @@
 <p align="center">
   <img src="public/img/logo.svg?raw=true" width="120" title="hover text">
+  <br>
+  Visit the **Firebase 🔥 live demo** at https://webapp23-group4.web.app/
 </p>
 
 # **{App name}**: {Short slogan}
@@ -37,9 +39,6 @@
 ![Alt text](uml/model.png?raw=true "UML class diagram")
 
 
-## Team
+## Team members
 - @[{username}](https://github.com/{username}): Client
 - @[gmedina-de](https://github.com/gmedina-de): Developer
-
-## Live demo
-Visit https://webapp23-group4.web.app/
