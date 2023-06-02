@@ -1,7 +1,7 @@
 <p align="center">
   <a href="https://webapp23-group4.web.app/"><img src="public/img/logo.svg?raw=true" width="120" title="hover text"></a>
   <br>
-  Visit the <b>Firebase 🔥 live demo</b> at https://webapp23-group4.web.app/
+  Visit the <b>Firebase 🔥 demo</b> by tapping on the logo.
 </p>
 
 # **{App name}**: {Short slogan}
