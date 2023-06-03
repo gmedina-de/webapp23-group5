@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://webapp23-group4.web.app/"><img src="public/img/logo.svg?raw=true" width="120" title="hover text"></a>
+  <a href="https://webapp23-group4.web.app/"><img src="src/assets/logo.svg?raw=true" width="120" title="hover text"></a>
   <br>
   Visit the <b>Firebase 🔥 demo</b> by tapping on the logo.
 </p>
@@ -36,9 +36,38 @@
 
 
 ## Domain information model
-![Alt text](uml/model.png?raw=true "UML class diagram")
+![UML class diagram](uml/model.png?raw=true)
 
 
 ## Team members
 - @[{username}](https://github.com/{username}): Client
 - @[gmedina-de](https://github.com/gmedina-de): Developer
+
+
+## Project setup
+```
+npm install
+```
+
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
+
+### Compiles and minifies for production
+```
+npm run build
+```
+
+### Lints and fixes files
+```
+npm run lint
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
+
+### Deploy to production
+```
+firebase deploy
+```
