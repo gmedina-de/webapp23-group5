@@ -1,5 +1,5 @@
+<!-- eslint-disable max-len -->
 <template>
-  <!-- eslint-disable max-len -->
   <div class="list row">
     <div class="col-md-6">
       <h4>Tutorials List</h4>
@@ -12,7 +12,7 @@
     </div>
     <div class="col-md-6">
       <div v-if="currentTutorial">
-        <tutorial-details :tutorial="currentTutorial" @refreshList="refreshList" />
+        <tutorial-item :tutorial="currentTutorial" @refreshList="refreshList" />
       </div>
       <div v-else>
         <br />
@@ -28,7 +28,7 @@ import TutorialItem from "./TutorialItem";
 
 export default {
   name: "tutorials-list",
-  components: { TutorialDetails: TutorialItem },
+  components: { TutorialItem },
   data() {
     return {
       tutorials: [],
