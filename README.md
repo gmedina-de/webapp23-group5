@@ -70,6 +70,4 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 ### Deploy to Firebase
 After committing and pushing to GitHub, 
 a build and deploy action will be triggered for the `dist` folder, 
-so no manual `npm run build` or `firebase deploy` are being required.
-See `.github/workflows`.npm run build` or `firebase deploy` are being required.
-See `.github/workflows`.
+so no manual `npm run build && firebase deploy` at the local machine is being required.
