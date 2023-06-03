@@ -30,6 +30,6 @@ jobs:
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: "${{ secrets.GITHUB_TOKEN }}"
-          firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT_WEBAPP23_GROUP4 }}"
+          firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT_WEBAPP23_GROUP5 }}"
           channelId: live
-          projectId: webapp23-group4
+          projectId: webapp23-group5
