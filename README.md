@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://webapp23-group4.web.app/"><img src="src/assets/logo.svg?raw=true" width="120" title="hover text"></a>
+  <a href="https://webapp23-group4.web.app/"><img src="public/logo.svg?raw=true" width="120" title="hover text"></a>
   <br>
   Visit the <b>Firebase 🔥 demo</b> by tapping on the logo.
 </p>

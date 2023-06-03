@@ -10,10 +10,12 @@
   "dependencies": {
     "bootstrap": "^4.6.0",
     "core-js": "^3.8.3",
-    "firebase": "^9.22.1",
+    "feather-icons": "^4.29.0",
+    "firebase": "^8.10.0",
     "jquery": "^3.7.0",
     "popper.js": "^1.16.1",
     "vue": "^3.2.13",
+    "vue-feather": "^2.0.0",
     "vue-router": "^4.2.2"
   },
   "devDependencies": {
