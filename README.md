@@ -6,8 +6,9 @@
 
 # **{App name}**: {Short slogan}
 
-name: Jani
-slogan: "Cares about you"
+App Name: Jani
+
+Short Slogan: "Cares about you"
 
 ## Business description
 
