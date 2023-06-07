@@ -4,8 +4,8 @@
   Visit the <b>Firebase 🔥 demo</b> by tapping on the logo.
 </p>
 
-# Jani: Cares about you
-This responsive web app, codename Jani, provides a comprehensive solution for collecting, managing and analyzing health data. 
+# **Jani** *cares about you*
+This responsive web app, codename *Jani*, provides a comprehensive solution for collecting, managing and analyzing health data. 
 It enables users to better monitor their health, track their progress and receive positive incentives to achieve their health goals. 
 The integration of gamification elements and personalized recommendations creates a motivating and engaging user experience.
 The app provides a user-friendly interface that allows users to record, manage and analyze their health values and vital signs.
