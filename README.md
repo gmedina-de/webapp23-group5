@@ -45,8 +45,8 @@ The following features are consequently provided by this web app:
 ![UML class diagram](uml/model.png?raw=true)
 
 ## Team members
-- @[uniChkhitunidze](https://github.com/uniChkhitunidze): Client
-- @[gmedina-de](https://github.com/gmedina-de): Developer
+- @[uniChkhitunidze](https://github.com/uniChkhitunidze)
+- @[gmedina-de](https://github.com/gmedina-de)
 
 ## Project setup
 ### Install dependencies
