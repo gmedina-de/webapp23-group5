@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://webapp23-group5.web.app/"><img src="public/logo.svg?raw=true" width="120" title="hover text"></a>
+  <a href="https://webapp23-?????.web.app/"><img src="public/logo.svg?raw=true" width="120" title="hover text"></a>
   <br>
   Visit the <b>Firebase 🔥 demo</b> by tapping on the logo.
 </p>
@@ -44,35 +44,6 @@ The following features are consequently provided by this web app:
 ## Domain information model
 ![UML class diagram](uml/model.png?raw=true)
 
-## Team members
+## Client
 - @[uniChkhitunidze](https://github.com/uniChkhitunidze)
 - @[gmedina-de](https://github.com/gmedina-de)
-
-## Project setup
-### Install dependencies
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
-
-### Deploy to Firebase
-After committing and pushing to GitHub, 
-a build and deploy action will be triggered for the `dist` folder, 
-so no manual `npm run build && firebase deploy` at the local machine is being required.
