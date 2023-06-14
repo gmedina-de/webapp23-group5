@@ -47,3 +47,21 @@ The following features are consequently provided by this web app:
 ## Client
 - @[uniChkhitunidze](https://github.com/uniChkhitunidze)
 - @[gmedina-de](https://github.com/gmedina-de)
+##  Requirements Elaboration 
+| Client's Requrements| Elaborated requirements| 
+| --------------------| :--------------------: | 
+| Dashboard |  Data should include information on consumed and burned calories, steps are taken, as well as the user's current BMI (Body Mass Index) and waist-hip ratio. The dashboard should provide a comprehensive overview of the user's fitness progress |
+| **Goal**|  Goals for specific measurements, such as weight, body fat percentage, steps, or any other relevant metrics. |
+|Create / Update / Delete goal |User able to create goals with the flexibility to modify or remove goals as needed. |
+| Show Goal | A list, showing the details of each goal, such as the measurement being targeted also indicate the difference between the current status and the desired outcome. |
+|**Measurement** | Category consists of scale/tape/vitals |
+| Scale Measurement| Record their scale measurements, including the date, time, weight, and body fat percentage|
+| Tape Measurement| Record their tape measurements, including the date, time, height, hip circumference, and waist circumference |
+| Vitals Measurement| Record their vital measurements such as temperature, heart rate, and blood pressure along with the date and time. |
+| Show / Update / Delete Measurements |Measurements presented in an organized table format, allowing users to easily review their progress over time/ Regardless of the measurement type, users to update their recorded measurements/ Regardless of the measurement type, users with the ability to delete any recorded measurements|
+|Create / Update / Delete Calories |Users to log their consumed calories, including the date, time, and amount of calories consumed. Users should have the flexibility to create, update, and delete entries|
+|Show calories| The application display a table presenting the user's recorded calories over time. |
+| Create / Update / Delete activity |Users to log their physical activities, including the start and end dates and times, the activity category, and the number of steps taken, with the flexibility to modify or remove activities as needed|
+| Show activities | User's logged activities in a table format, showcasing the details of each activity, such as the activity category, duration, and steps taken| 
+| Show profile | Display the user's profile information, including their name, birth date, and gender. This information allows users to verify and identify their personal account details within the application.|
+| Update profile | Users have the ability to update their profile information, such as their name, birth date, and gender|
