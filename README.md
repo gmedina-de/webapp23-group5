@@ -65,3 +65,7 @@ The following features are consequently provided by this web app:
 | Show activities | User's logged activities in a table format, showcasing the details of each activity, such as the activity category, duration, and steps taken| 
 | Show profile | Display the user's profile information, including their name, birth date, and gender. This information allows users to verify and identify their personal account details within the application.|
 | Update profile | Users have the ability to update their profile information, such as their name, birth date, and gender|
+
+
+## Design Model
+![image](https://github.com/gmedina-de/webapp23-group5/blob/main/Design%20Model.png)
