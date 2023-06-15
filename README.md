@@ -69,3 +69,6 @@ The following features are consequently provided by this web app:
 
 ## Design Model
 ![image](https://github.com/gmedina-de/webapp23-group5/blob/main/Design%20Model.png)
+
+## Domain Model
+![image](https://github.com/gmedina-de/webapp23-group5/blob/main/Domain%20Model.png)
