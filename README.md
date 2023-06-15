@@ -1,9 +1,3 @@
-<p align="center">
-  <a href="https://webapp23-?????.web.app/"><img src="public/logo.svg?raw=true" width="120" title="hover text"></a>
-  <br>
-  Visit the <b>Firebase 🔥 demo</b> by tapping on the logo.
-</p>
-
 # **Jani** *cares about you*
 This responsive web app, codename *Jani*, provides a comprehensive solution for collecting, managing and analyzing health data. 
 It enables users to better monitor their health, track their progress and receive positive incentives to achieve their health goals. 
