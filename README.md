@@ -38,7 +38,7 @@ The following features are consequently provided by this web app:
 ## Domain information model
 ![UML class diagram](uml/model.png?raw=true)
 ## Design Model
-![image](https://github.com/gmedina-de/webapp23-group5/blob/main/Design%20Model.png)
+![image](https://github.com/gmedina-de/webapp23-group5/blob/main/Design%20Model.jpg)
 
 ## Domain Model
 ![image](https://github.com/gmedina-de/webapp23-group5/blob/main/Domain_Model.png)
