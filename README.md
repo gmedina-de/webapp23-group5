@@ -65,3 +65,19 @@ The following features are consequently provided by this web app:
 | Show profile | Display the user's profile information, including their name, birth date, and gender. This information allows users to verify and identify their personal account details within the application.|
 | Update profile | Users have the ability to update their profile information, such as their name, birth date, and gender|
 
+## Developers
+- @[sahajmajavdia](https://github.com/sahajmajavdia)
+- @[xpes](https://github.com/xpes)
+## Separation of Work Assignment 7B
+
+| Developpers | Work| 
+| --------------------| :--------------------: | 
+|   Sahaj Majavdia   |   Domain Model <br>  Requirements Elaboration   | 
+|   Shubam Vekhande  |   Design Model <br> Requirements Elaboration   |  
+
+## Separation of Work Assignment 7C1
+
+| Developpers | Work| 
+| --------------------| :--------------------: | 
+|   Sahaj Majavdia   |   Create/Retrieve   | 
+|   Shubam Vekhande  |    Delete/Update    |  
