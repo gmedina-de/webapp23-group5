@@ -79,5 +79,5 @@ The following features are consequently provided by this web app:
 
 | Developpers | Work| 
 | --------------------| :--------------------: | 
-|   Sahaj Majavdia   |   Create/Retrieve   | 
-|   Shubam Vekhande  |    Delete/Update    |  
+|   Sahaj Majavdia   |   Create/Retrieve/Generate Data   | 
+|   Shubam Vekhande  |    Delete/Update/Clear Data    |  
