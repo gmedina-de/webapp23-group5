@@ -1,0 +1,32 @@
+table,th, td {
+    border: solid 2px;
+    border-collapse: collapse;
+}
+figure {
+    float: right;
+  }
+
+  a.disabled {
+    opacity: 0.4;
+    pointer-events: none;
+    cursor: default;
+  }
+
+  .generateTestData {
+    margin-top: 1em;
+  }
+
+  div#login-management {
+    text-align: right;
+    padding: 1em;
+    background: #fffde9;
+    border: 1px solid #ffbb4c;
+    height: 1em;
+  }
+  #message {
+    color: #ff3300;
+    text-align: right;
+    padding: 1em;
+    background: #fff4f4;
+    border: 1px solid #ff7653;
+  }
