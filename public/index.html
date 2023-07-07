@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <link rel="stylesheet" href="main.css" />
+<head>
+  <meta charset="UTF-8"/>
+  <title>Jani</title>
+  <meta name="description" content="A minimal effort web app with plain JS + Firebase."/>
+  <link rel="icon" href="favicon.ico"/>
+
+  <script type="module">
+     import {handleAuthentication} from "./js/v/accessControl.mjs";
+       import Person from "./js/m/Person.mjs";
+       handleAuthentication();
+       window.addEventListener("load", function () {
+      const clearButton = document.getElementById("clearData"),
+        generateTestDataButtons = document.querySelectorAll("button.generateTestData");
+      // set event handlers for the buttons "clearData" and "generateTestData"
+      clearButton.addEventListener("click", Person.clearData);
+      for (const btn of generateTestDataButtons) {
+        btn.addEventListener("click", Person.generateTestData);
+      }
+    });
+  </script>
+</head>
+<body>
+  <main>
+    <div id="login-management"></div>
+    <h1>Jani cares about you </h1>
+    <ul role="menubar">
+      <li role="menuitem">
+        <a href="createPerson.html" class="disabled">Create a new Person record</a>
+      </li>
+      <li role="menuitem">
+        <a href="retrieveAndListAllPersons.html">Retrieve and list all Person records</a>
+      </li>
+      <li role="menuitem">
+        <a href="updatePerson.html" class="disabled">Update a Person record</a>
+      </li>
+      <li role="menuitem">
+        <a href="deletePerson.html" class="disabled">Delete a Person record</a>
+      </li>
+      <li role="menuitem">
+        <button class="generateTestData" type="button" disabled="disabled">Generate test data</button>
+      </li>
+      <li role="menuitem">
+        <button id="clearData" type="button" disabled="disabled">Clear database</button>
+      </li>
+    </ul>
+  
+  </main>
+  </body>
+  </html>
