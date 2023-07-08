@@ -1,13 +1,18 @@
+/*Import Statements */
+
 import Person, { GenderEL } from "../m/Person.mjs";
 import { showProgressBar, hideProgressBar,fillSelectWithOptions } from "../../lib/util.mjs";
 import { handleAuthentication } from "./accessControl.mjs";
 
+/* UI Authentication */
 handleAuthentication();
 
+/* Variable Declaration */
 const formEl = document.forms["Person"],
 createButton = formEl["commit"],
 progressEl = document.querySelector("progress");
 
+/* Add event listeners */
 formEl["personId"].addEventListener("input", function () {
     // do not yet check the ID constraint, only before commit
     formEl["personId"].setCustomValidity( Person.checkPersonId( formEl["personId"].value).message);
@@ -18,6 +23,7 @@ formEl["personName"].addEventListener("input", function () {
 formEl["birth"].addEventListener("input", function () {
     formEl["birth"].setCustomValidity( Person.checkBirth( formEl["birth"].value).message);
 });
+
 
 const createGenderSelectEl = formEl.gender;
 fillSelectWithOptions(createGenderSelectEl, GenderEL.labels);

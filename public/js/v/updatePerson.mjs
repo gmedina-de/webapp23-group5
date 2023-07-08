@@ -22,37 +22,52 @@ formEl["birth"].addEventListener("input", function () {
 
 
 
-fillSelectWithOptions(formEl.gender, GenderEL.labels);
+fillSelectWithOptions(MemberRecords,selectMemberEl,"personId",'personName');
 
-for (const MemberRec of MemberRecords) {
-  const optionEl = document.createElement("option");
-  optionEl.text = MemberRec.personName;
-  optionEl.value = MemberRec.personId;
-  selectMemberEl.add(optionEl, null);
-}
+// for (const MemberRec of MemberRecords) {
+//   const optionEl = document.createElement("option");
+//   optionEl.text = MemberRec.personName;
+//   optionEl.value = MemberRec.personId;
+//   selectMemberEl.add(optionEl, null);
+// }
 selectMemberEl.addEventListener("change", async function () {
   const memberId = selectMemberEl.value;
   if (memberId) {
     const MemberRec = await Person.retrieve(memberId);
-    formEl["PersonId"].value = MemberRec.personId;
-    formEl["PersonName"].value = MemberRec.personName;
-    formEl["gender"].value = MemberRec.gender;
-    formEl["birth"].value = MemberRec.birth;
+    for (const field of ["personId", "personName", "gender", "birth"]) {
+      formEl[field].value = MemberRec[field] !== undefined ? MemberRec[field] : "";
+      // delete custom validation error message which may have been set before
+      formEl[field].setCustomValidity("");
+    }
   } else {
     formEl.reset();
   }
 });
 
 updateButton.addEventListener("click", async function () {
+  const  MemberIdRef = selectMemberEl.value;
+  if (!MemberIdRef) return;
   const slots = {
     personId: formEl["PersonId"].value,
     personName: formEl["PersonName"].value,
     gender: formEl["gender"].value,
     birth: formEl["birth"].value,
-  },
-    MemberIdRef = selectMemberEl.value;
-  if (!MemberIdRef) return;
-  await Person.update(slots);
-  selectMemberEl.options[selectMemberEl.selectedIndex].text = slots.personName;
-  formEl.reset();
+  };
+  formEl["personName"].addEventListener("input", function () {
+    formEl["personName"].setCustomValidity(
+        Person.checkName( slots.personName).message);
+  });
+  formEl["birth"].addEventListener("input", function () {
+    formEl["birth"].setCustomValidity(
+        Person.checkBirth( slots.birth).message);
+  });
+  if (formEl.checkValidity()){
+    Person.update(slots);
+    selectMemberEl.options[selectMemberEl.selectedIndex].text = slots.personName;
+    formEl.reset();
+  }
+});
+
+formEl.addEventListener("submit", function (e) {
+  e.preventDefault();
 });
