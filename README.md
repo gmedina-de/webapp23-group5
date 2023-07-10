@@ -81,3 +81,10 @@ The following features are consequently provided by this web app:
 | --------------------| :--------------------: | 
 |   Sahaj Majavdia   |   Create/Retrieve/Generate Data   | 
 |   Shubam Vekhande  |    Delete/Update/Clear Data    |  
+
+## Separation of Work Assignment 7C1
+
+| Developpers | Work| 
+| --------------------| :--------------------: | 
+|   Sahaj Majavdia   |   Enabling/disabling UI elements in start page based on authentication  <br> Email verification with customised page  <br> Implementation of 404 page   | 
+|   Shubam Vekhande  |  	Implementation of user authentication status <br> Redirection to Sign in/up page <br> Implementation of Sign out    |  
