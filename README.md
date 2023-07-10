@@ -82,7 +82,7 @@ The following features are consequently provided by this web app:
 |   Sahaj Majavdia   |   Create/Retrieve/Generate Data   | 
 |   Shubam Vekhande  |    Delete/Update/Clear Data    |  
 
-## Separation of Work Assignment 7C1
+## Separation of Work Assignment 7C2
 
 | Developpers | Work| 
 | --------------------| :--------------------: | 
