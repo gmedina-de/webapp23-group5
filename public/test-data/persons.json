@@ -1,0 +1,20 @@
+[
+    {
+      "personId": "1",
+      "personName": "Carolyn Ward",
+      "gender": 2,
+      "birth": "1995-01-11"
+    },
+    {
+      "personId": "2",
+      "personName": "Toby Leach",
+      "gender": 1,
+      "birth": "1998-04-27"
+    },
+    {
+      "personId": "3",
+      "personName": "Katie Pritch",
+      "gender": 2,
+      "birth": "1960-06-15"
+    }
+]

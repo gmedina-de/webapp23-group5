@@ -1,61 +1,55 @@
-
 class ConstraintViolation {
-    constructor(msg) {
-        this.message = msg;
-    }
+  constructor(msg) {
+    this.message = msg;
+  }
 }
 
 class NoConstraintViolation extends ConstraintViolation {
-    constructor( msg, v) {
-        super( msg);
-        if (v) this.checkedValue = v;
-        this.message = "";
-    }
+  constructor( msg, v) {
+    super( msg);
+    if (v) this.checkedValue = v;
+    this.message = "";
+  }
 }
 
 class MandatoryValueConstraintViolation extends ConstraintViolation {
-    constructor( msg) {
-        super( msg);
-    }
+  constructor( msg) {
+    super( msg);
+  }
 }
 
 class RangeConstraintViolation extends ConstraintViolation {
-    constructor( msg) {
-        super( msg);
-    }
+  constructor( msg) {
+    super( msg);
+  }
 }
 
 class StringLengthConstraintViolation extends ConstraintViolation {
-    constructor( msg) {
-        super( msg);
-    }
+  constructor( msg) {
+    super( msg);
+  }
 }
 
 class IntervalConstraintViolation extends ConstraintViolation {
-    constructor( msg) {
-        super( msg);
-    }
+  constructor( msg) {
+    super( msg);
+  }
 }
 
 class PatternConstraintViolation extends ConstraintViolation {
-    constructor( msg) {
-        super( msg);
-    }
+  constructor( msg) {
+    super( msg);
+  }
 }
 
 class UniquenessConstraintViolation extends ConstraintViolation {
-    constructor( msg) {
-        super( msg);
-    }
-}
-class ReferentialIntegrityConstraintViolation extends ConstraintViolation {
-    constructor (msg) {
-        super( msg);
-    }
+  constructor( msg) {
+    super( msg);
+  }
 }
 
 export {
-    ConstraintViolation, NoConstraintViolation, MandatoryValueConstraintViolation,
-    RangeConstraintViolation, StringLengthConstraintViolation, IntervalConstraintViolation,
-    PatternConstraintViolation, UniquenessConstraintViolation,ReferentialIntegrityConstraintViolation
+  ConstraintViolation, NoConstraintViolation, MandatoryValueConstraintViolation,
+  RangeConstraintViolation, StringLengthConstraintViolation, IntervalConstraintViolation,
+  PatternConstraintViolation, UniquenessConstraintViolation
 };

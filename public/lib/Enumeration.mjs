@@ -3,7 +3,6 @@ import { ConstraintViolation } from "./errorTypes.mjs";
 function Enumeration( enumArg) {
   var i=0, lbl="", LBL="";
   if (Array.isArray( enumArg)) {
-    // a simple enum defined by a list of labels
     if (!enumArg.every( function (n) {
             return (typeof(n) === "string"); })) {
       throw new ConstraintViolation(
@@ -43,10 +42,7 @@ function Enumeration( enumArg) {
   }
   Object.freeze( this);
 }
-/*
- * Serialize a list of enumeration literals/indexes as a list of 
- * enumeration literal names
- */
+
 Enumeration.prototype.toString = function (a) {
   return a.map(function (enumInt) {
     return this.enumLitNames[enumInt - 1];
