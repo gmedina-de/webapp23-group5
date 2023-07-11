@@ -1,50 +1,44 @@
 rules_version = '2';
 
 service cloud.firestore {
-  match /databases/{database}/documents {
-/** VALIDATION FUNCTIONS **/
-    // check how personId is formed:
-    function checkPersonId( personId) {
-      return isbn.matches('[0-9]')
-             && personId != null;
-    }
-    // check if exist document with same PersonId
-    function checkPersonIdAsId( personId) {
-      return !(exists(/databases/$(database)/documents/books/$(personId)));
-    }
-    // check all constraints for year: min, max and integer
-    function checkBirth( birth) {
-      return (timestamp.date( birth ).toMillis() < request.time.toMillis()
-              && birth > 1895-12-28
-              && year is int
-              && year != null);
-    }
+  match /databases/{database}/documents { // {database} clause to indicates that these rules apply to all databases in Firestore
 
-
-    /** VALIDATION RULES **/
-    match /{persons}/{document=**} {
-      /** RULES FOR allow read WITH CONVENIENCE METHOD - LOW GRANULARITY **/
-      /** NO authentication required **/
+    match /{document=**} {
       allow read: if request.auth != null;
-
-      /** RULES FOR allow write WITH STANDARD METHODS - HIGH GRANULARITY **/
-      /** authentication required **/
-      //validate when create new book record
-      allow create: if request.auth.token.email_verified == true
-                       && checkPersonIdAsId( request.resource.data.personId) == true
-                       && checkPersonId( request.resource.data.isbn) == true
-                       && request.resource.data.personName != null
-                       && checkBirth( request.resource.data.birth) == true;
-
-      // validate when update book record
-      allow update: if request.auth.token.email_verified == true
-                       && (request.resource.data.diff( resource.data).affectedKeys()
-                        .hasOnly(['personName', 'birth']))
-                       && request.resource.data.birth != null ?
-                           checkYear( request.resource.data.birth) : true;
-
-      // validate when delete book record
+      allow create: if request.auth.token.email_verified == true;
+      allow update: if request.auth.token.email_verified == true;
       allow delete: if request.auth.token.email_verified == true;
+    }
+    
+    /** VALIDATION FUNCTIONS **/
+    function checkMandatory( prop) {
+      return prop != null && prop !="";
+    }
+    /*
+     *  Person
+     */
+
+    match /{person}/{document=**}{
+      allow create:
+          if request.auth.token.email_verified == true
+          && request.resource.data.personId != null ? checkMandatory(request.resource.data.personId) : true
+          && request.resource.data.personName != null ? checkMandatory(request.resource.data.personName) : true
+          && request.resource.data.gender != null ? checkMandatory(request.resource.data.gender) : true
+          && request.resource.data.birth != null ? checkMandatory(request.resource.data.birth) : true
+          ;
+      
+      allow update:
+          if request.auth.token.email_verified == true
+          && (request.resource.data.diff(resource.data).affectedKeys().hasOnly(['role', 'personName', 'gender', 'birth', 'email', 'phoneNumber', 'address', 'iban']))
+          && request.resource.data.personName != null ? checkMandatory(request.resource.data.personName) : true
+          && request.resource.data.gender != null ? checkMandatory(request.resource.data.gender) : true
+          && request.resource.data.birth != null ? checkMandatory(request.resource.data.birth) : true
+
+          ;
+          
+
+      allow delete:
+          if request.auth.token.email_verified == true;
     }
   }
 }
