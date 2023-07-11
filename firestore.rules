@@ -29,11 +29,10 @@ service cloud.firestore {
       
       allow update:
           if request.auth.token.email_verified == true
-          && (request.resource.data.diff(resource.data).affectedKeys().hasOnly(['role', 'personName', 'gender', 'birth', 'email', 'phoneNumber', 'address', 'iban']))
+          && (request.resource.data.diff(resource.data).affectedKeys().hasOnly(['role', 'personName', 'gender', 'birth']))
           && request.resource.data.personName != null ? checkMandatory(request.resource.data.personName) : true
           && request.resource.data.gender != null ? checkMandatory(request.resource.data.gender) : true
           && request.resource.data.birth != null ? checkMandatory(request.resource.data.birth) : true
-
           ;
           
 
