@@ -8,18 +8,17 @@
   <link rel="icon" href="favicon.ico"/>
 
   <script type="module">
-     import {handleAuthentication} from "./js/v/accessControl.mjs";
-       import Person from "./js/m/Person.mjs";
-       handleAuthentication();
-       window.addEventListener("load", function () {
-      const clearButton = document.getElementById("clearData"),
-        generateTestDataButtons = document.querySelectorAll("button.generateTestData");
-      // set event handlers for the buttons "clearData" and "generateTestData"
-      clearButton.addEventListener("click", Person.clearData);
-      for (const btn of generateTestDataButtons) {
-        btn.addEventListener("click", Person.generateTestData);
-      }
-    });
+   import { handleAuthentication } from "./js/v/accessControl.mjs";
+    import { clearData, generateTestData } from "./js/c/app.mjs";
+
+    handleAuthentication();
+    const clearButton = document.getElementById("clearData"),
+      generateTestDataButtons = document.querySelectorAll("button.generateTestData");
+    // Set event handlers for the buttons "clearData" and "generateTestData"
+    clearButton.addEventListener("click", clearData);
+    for (const btn of generateTestDataButtons) {
+      btn.addEventListener("click", generateTestData);
+    }
   </script>
 </head>
 <body>
