@@ -88,3 +88,12 @@ The following features are consequently provided by this web app:
 | --------------------| :--------------------: | 
 |   Sahaj Majavdia   |   Enabling/disabling UI elements in start page based on authentication  <br> Email verification with customised page  <br> Implementation of 404 page   | 
 |   Shubam Vekhande  |  	Implementation of user authentication status <br> Redirection to Sign in/up page <br> Implementation of Sign out    |  
+
+## Separation of Work Assignment 7C3
+
+| Developpers | Work| 
+| --------------------| :--------------------: | 
+|   Sahaj Majavdia   |   DV1, DV2, DV3 <br> SR1, SR2, SR3,SR4, SR5  | 
+|   Shubam Vekhande  |  DV1, DV2, DV3 <br> S1, S2, T1  |  
+
+> Comments : Equal contributions were made to add input and constraint validation
